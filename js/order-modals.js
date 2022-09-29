@@ -37,3 +37,39 @@ function toggleLovely() {
         thank.style.display = "none";
     }
 }
+
+let lovel = document.getElementById('lovely-modal');
+let compl = document.getElementById('order-completed');
+let revi = document.getElementById('order-review');
+let thank = document.getElementById('search-modal');
+
+lovel.addEventListener("click", (event) => {
+    if (!event.target.classList.contains("menu__content")) {
+        lovel.style.display = "none";
+    }
+});
+compl.addEventListener("click", (event) => {
+    if (!event.target.classList.contains("menu__content")) {
+        compl.style.display = "none";
+    }
+});
+revi.addEventListener("click", (event) => {
+    if (!event.target.classList.contains("menu__content")) {
+        revi.style.display = "none";
+    }
+});
+thank.addEventListener("click", (event) => {
+    if (!event.target.classList.contains("menu__content")) {
+        thank.style.display = "none";
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        lovel.style.display = "none";
+        compl.style.display = "none";
+        revi.style.display = "none";
+        thank.style.display = "none";
+    }
+});
+
