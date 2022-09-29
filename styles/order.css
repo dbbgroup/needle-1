@@ -1,0 +1,495 @@
+.order-wrapper, .order-form-wrapper {
+    padding:5vh 0 5vh;
+}
+
+.order__head-text {
+    font-family: "BoldMontserrat";
+    margin-bottom:5vh;
+}
+
+.order__table {
+    width:100%;
+    text-align: center;
+}
+
+.order__table td {
+    padding:1em;
+}
+
+.order__table th {
+    padding:1.5em;
+}
+
+th, td {
+    border-top: 1px solid #e0e0e0;
+}
+
+.order__table-item.col-2 {
+    font-family: BoldMontserrat;
+    font-size:1.7em;
+}
+
+.order__table-product-img img {
+    width:150px;
+    height:auto;
+}
+
+.order__table-product-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left:5vw;
+    width:300px;
+}
+
+.order__table-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.order__table-product-title {
+    font-family: SBoldMontserrat;
+    font-size:1.3em;
+}
+
+.order__table-product-article, .order__table-product-quantity {
+    font-size:1rem;
+    font-family: MedMontserrat;
+    color:#979797;
+}
+
+.order__table-product-article {
+    margin-top:2em;
+}
+
+.order__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-form__col {
+    width:45%;
+    display:flex;
+    flex-direction: column;
+}
+
+.order__col1-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 45px;
+    font-family: SBoldMontserrat;
+    margin:0.7em 0;
+}
+
+.order__form-input {
+    height:45px;
+    width:300px;
+    background:#F1F1F1;
+    border-radius:10px;
+    border:none;
+    outline: none;
+    padding:10px 20px;
+    resize:vertical;
+}
+
+.order__form-input:focus {
+    background:#f7f7f7
+}
+
+.order__form-subtext {
+    margin:5vh 0;
+    font-size:0.9em;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.cart__row-checked {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #292929;
+}
+
+.cart__row-checked:before {
+    position: absolute;
+    content: url(../imgs/cart/checkbox.svg);
+    top: 50%;
+    right: 50%;
+    transform: translate(58%, -50%);
+    -webkit-transform: translate(58%, -50%);
+    -moz-transform: translate(58%, -50%);
+    -ms-transform: translate(58%, -50%);
+    -o-transform: translate(58%, -50%);
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + .cart__row-checked:before {
+    opacity: 1;
+}
+
+.cart__row-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+    margin-left: 15px;
+}
+
+.order__form-submit {
+    border-radius:3em;
+    background:#000;
+    color:#fff;
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: RegMontserrat;
+    font-size:0.9em;
+    text-decoration: none;
+    padding:1.5rem 3rem;
+    margin-top:5vh;
+}
+
+.order__form-radio {
+    display: flex;
+    flex-direction: row;
+    margin:0.6em 0;
+}
+
+.order__form-radio label {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.order__form-radio label span:last-child {
+    font-family: SBoldMontserrat;
+}
+
+.order-form__col-2 .order__form-radio:nth-child(5) {
+    margin-bottom:10vh;
+}
+
+.order__payments-link {
+    text-decoration: none;
+}
+
+.order__payments-link:hover {
+    opacity:0.8;
+    cursor: default;
+}
+
+.order__form-payments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:1vh 0 3vh;
+}
+
+.order-competed, .order-review {
+    background:rgba(0,0,0,0.7);
+    position: fixed;
+    z-index:1;
+    width: 100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.order-completed__wrapper, .order-review__wrapper {
+    background:#fff;
+    max-width:500px;
+    margin:5vh auto;
+    padding:5vh 2em 0;
+    text-align:center;
+    border-radius:2px;
+}
+
+.order-review__wrapper {
+    max-width: 700px;
+    text-align:left;
+    margin-top:5vh;
+}
+
+.order-review__wrapper .order-form-wrapper .order-form__col {
+    width:100%;
+}
+
+.order-completed__head-text {
+    font-size:1.4rem;
+    font-family: BoldMontserrat;
+}
+
+.order-completed__body-text {
+    font-family: MedMontserrat;
+    font-size:1rem;
+    margin:1em 0 5vh;
+}
+
+.menu__search-input {
+    width:80%;
+    border-radius:1em 0 0 1em;
+    border:1px solid #dedede;
+    outline:none;
+    padding:1em 2em;
+}
+
+.search__submit {
+    padding:1em 2em;
+    background:#cecece;
+    border:1px solid #cecece;
+    border-radius:0 1em 1em 0;
+    width:20%;
+}
+
+.search__submit:hover {
+    background:#e0e0e0;
+    border-color:#e0e0e0;
+    cursor:default;
+}
+
+.menu__search-result {
+    border-bottom:1px solid #e0e0e0;
+    padding:1em;
+}
+
+.menu__search-result h3 {
+    font-family:SBoldMontserrat;
+}
+
+.search__result-link {
+    color:#111;
+}
+
+.search__result-link:hover {
+    text-decoration:none;
+}
+
+.cart__row {
+    display: flex;
+    margin: 15px 0 25px;
+}
+
+.cart__row-remove {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #c7c7c7;
+    margin-left: 60px;
+}
+
+.cart__row-label {
+    user-select: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.cart__row-checked {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #292929;
+}
+
+.cart__row-checked:before {
+    position: absolute;
+    content: url(../imgs/cart/checkbox.svg);
+    top: 50%;
+    right: 50%;
+    transform: translate(58%, -50%);
+    -webkit-transform: translate(58%, -50%);
+    -moz-transform: translate(58%, -50%);
+    -ms-transform: translate(58%, -50%);
+    -o-transform: translate(58%, -50%);
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + .cart__row-checked:before {
+    opacity: 1;
+}
+
+.cart__row-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+    margin-left: 15px;
+}
+
+.cart__table-products {
+    display:flex;
+    flex-direction: row;
+}
+
+.cart__table-product-info {
+    display: flex;
+    flex-direction: column;
+    margin-left:5vh;
+    line-height:30px;
+}
+
+.cart__table-product-img img {
+    width:80px;
+    height:auto;
+}
+
+.cart__table-product-title {
+    font-family: MedMontserrat;
+}
+
+.cart__table-product-price {
+    font-family: SBoldMontserrat;
+    color:#b0b0b0;
+}
+
+.favorite__table-body td {
+    padding:1em;
+    border-top:1px solid #e0e0e0;
+}
+
+.rating-area {
+    overflow: hidden;
+    width: 265px;
+    margin:1em 0 1em -3em;
+}
+
+.rating-area:not(:checked) > input {
+    display: none;
+}
+
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 42px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 32px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+
+.rating-area > input:checked ~ label {
+    color: #1E3667;
+    text-shadow: 1px 1px #0b183a;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: #1E3667;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+    color: #1E3667;
+    text-shadow: 1px 1px #162d5b;
+}
+
+.rate-area > label:active {
+    position: relative;
+}
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+.rating-mini > span:before {
+    content: '★';
+}
+.rating-mini > span.active {
+    color: #0e4ac2;
+}
+
+@media screen and (max-width:1313px) {
+    .order__col1-label {
+        flex-direction: column;
+    }
+
+    .order-review .order-completed__body-text {
+        display:none;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .order__form {
+        flex-direction: column;
+        width:100%;
+        padding-left:0.6em;
+    }
+
+    .order-form__col {
+        width:100%;
+    }
+
+    .order__table {
+        max-width:300px;
+    }
+
+    .order__table-item.col-2 {
+        font-family: MedMontserrat;
+        font-size:1rem;
+    }
+
+    .order__table-product-title {
+        font-size:1rem;
+    }
+
+    .order__table-product-info {
+        max-width: 200px;
+    }
+
+    .order__table-product-article {
+        margin-top: 0.5em;
+    }
+
+    .order__table-product-img img {
+        width:40px;
+        height:auto;
+    }
+
+    .order__form-input {
+        width:90%;
+    }
+
+    .order-form__col-2 .order__head-text {
+        margin-top:6vh;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .order__table {
+        font-size:0.7rem;
+    }
+
+    .order__table-product-info {
+        max-width: 60%;
+    }
+
+    .order-review__wrapper {
+        padding:1em;
+    }
+
+    .favorite__table-body td {
+        padding:1em 0;
+    }
+}

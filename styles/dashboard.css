@@ -1,0 +1,294 @@
+.dashboard {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:5vh 0;
+}
+
+.dashboard__personal {
+    width:20%;
+}
+
+.dashboard__article {
+    width:75%;
+}
+
+.dashboard__short-info {
+    margin:2vh 0;
+}
+
+.dashboard__edit-link {
+    font-family: MedMontserrat;
+    color:crimson;
+    text-decoration: underline;
+}
+
+.dashboard__edit-link:hover {
+    text-decoration: none;
+}
+
+.dashboard__short-info h2 {
+    font-family: SBoldMontserrat;
+    margin-bottom:1em;
+}
+
+.dashboard__main-info {
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard__main-info h2 {
+    font-family: BoldMontserrat;
+    font-size:2rem;
+    margin-bottom:0.5rem;
+}
+
+.dashboard__main-info span {
+    font-family: MedMontserrat;
+}
+
+.dashboard__card {
+    border-radius:10px;
+    background:linear-gradient(to right bottom, #fff, rgba(0, 0, 0, 0.31));
+    width:280px;
+    height:160px;
+    padding:1rem;
+    border: 1px solid gainsboro;
+}
+
+.dashboard__card-inline {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.dashboard__card-basic {
+    display:flex;
+    flex-direction: column;
+}
+
+.dashboard__card-basic span {
+    font-size:0.65rem;
+    font-family: MedMontserrat;
+}
+
+.dashboard__card-basic span:last-child {
+    font-size:1.5rem;
+    font-family:'SBoldMontserrat'
+}
+
+.dashboard__card-sold {
+    margin-top:0.8rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.dashboard__card-sold span:first-child {
+    font-size:0.7rem;
+    text-transform: uppercase;
+    font-family: SBoldMontserrat;
+}
+
+.dashboard__card-sold span:last-child {
+    font-size:1.2rem;
+    font-family: BoldMontserrat;
+    color:crimson;
+}
+
+.dashboard__card-num {
+    margin-top: 0.8rem;
+    font-size:1.1rem;
+    font-family: 'OCR A Std';
+}
+
+.dashboard__account-data {
+    margin-top:5vh;
+    max-width:700px;
+}
+
+.dashboard__account-data h3 {
+    font-family: BoldMontserrat;
+    margin:0.5rem 0;
+}
+
+.dashboard__account-data p {
+    color:#b0b0b0;
+    max-width:400px;
+    margin-bottom:3vh;
+}
+
+.dashboard__account-inline {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.dashboard__account-data-item {
+    display:flex;
+    flex-direction:column;
+    margin-top: 3vh;
+}
+
+.dashboard__account-data-item span:first-child {
+    font-size:0.6rem;
+    text-transform: uppercase;
+    font-family:'MedMontserrat';
+}
+
+.dashboard__account-value {
+    font-family: SBoldMontserrat;
+    margin-bottom:1em;
+    display: flex;
+    align-items: center;
+    line-height:19px;
+}
+
+.dashboard__account-value img {
+    margin-left:0.6em;
+}
+
+.dashboard__account-inline .dashboard__edit-link {
+    margin-right:1em;
+}
+
+.dashboard__account-primary {
+    padding:1.5em;
+    width:40%;
+    text-align: center;
+    background:#111;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: MedMontserrat;
+    transition: 0.15s;
+    font-size:0.8rem;
+    text-decoration: none;
+    border-radius:3em;
+    margin-top:5vh;
+    min-width:150px;
+}
+
+.dashboard__account-primary:hover {
+    opacity: 0.8;
+    cursor: default;
+}
+
+.dashboard__account-secondary {
+    padding:1.5em;
+    width:40%;
+    text-align: center;
+    border:1px solid #111;
+    color:#111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: MedMontserrat;
+    transition: 0.15s;
+    font-size:0.8rem;
+    text-decoration: none;
+    border-radius:3em;
+    margin-top:5vh;
+    min-width:150px;
+}
+
+.dashboard__account-secondary:hover {
+    background:#f5f5f5;
+    cursor:default;
+}
+
+.sale__graph-dot {
+    width:20px;
+    height:20px;
+    border:1px solid gainsboro;
+    background:#fff;
+    border-radius:50%;
+}
+
+.sale__graph-dot-active {
+    background:crimson;
+    border-color:crimson;
+}
+
+.sale__graph-line {
+    height:2px;
+    background:gainsboro;
+    width:100px;
+}
+
+.sale__graph-line-active {
+    background:crimson;
+}
+
+.dashboard__sale-graph {
+    width:280px;
+    margin:5vh auto 5vh 0;
+}
+
+.sale__dots-inline {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sale__desc-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: SBoldMontserrat;
+    font-size:1.15em;
+    color:#333;
+    margin-top:0.5em;
+}
+
+.sale__desc-active {
+    color:crimson
+}
+
+.dashboard__sale-graph span:last-child {
+    font-size:0.8em;
+    color:#333;
+    margin-top: 0.3em;
+}
+
+@media screen and (max-width:1020px) {
+    .dashboard {
+        flex-direction: column;
+    }
+}
+
+@media  screen and (max-width:815px) {
+    .dashboard__personal.col1 {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+    }
+
+    .dashboard__buttons-inline {
+        flex-direction: column;
+        margin-top:1em;
+    }
+
+    .dashboard__account-primary, .dashboard__account-secondary {
+        width:90%;
+        margin:1em auto;
+    }
+
+    .dashboard__article {
+        margin-top: 5vh;
+        border-top:1px solid gainsboro;
+        padding-top:10vh;
+    }
+
+    .dashboard__main-info h2 {
+        margin-top: 5vh;
+    }
+
+    .dashboard__article {
+        width:100%;
+        padding:1em;
+    }
+}

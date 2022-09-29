@@ -1,0 +1,22 @@
+.offer-wrapper {
+    padding:5vh 0 10vh;
+}
+
+.offer__head-text {
+    font-family: "BoldMontserrat";
+    margin-bottom:5vh;
+}
+
+.offer__delivery-head {
+    font-family: SBoldMontserrat;
+}
+
+.offer__delivery-item {
+    margin:3vh 0;
+}
+
+@media screen and (max-width: 416px) {
+    .offer-wrapper {
+        padding:1.5em;
+    }
+}
