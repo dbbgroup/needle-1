@@ -262,11 +262,16 @@
 	min-height: 543px;
 	background: url(../imgs/main/trainers1.png) no-repeat center center;
 	background-size: cover;
+	background-size: 100% 100%;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
+}
+
+.products__item-slide:hover {
+	background-size:120% 120%;
 }
 
 .products__item-row {
@@ -380,6 +385,13 @@
 	align-items: center;
 	max-width: 23%;
 	width: 100%;
+	padding:0.5em;
+	border:1px solid transparent;
+}
+
+.new-delivery__card:hover {
+	border-radius:1em;
+	border-color:gainsboro;
 }
 
 .new-delivery__card-img {
@@ -464,22 +476,34 @@
 	border-radius: 20px;
 	background: #e1e1e1 url("../imgs/main/men_catalog.jpg") no-repeat center
 		left;
+	background-size:100% 100%;
 	margin-right: 25px;
+	transition: .25s;
 }
 
 .catalog__slide:first-child {
 	opacity: 0.5;
+	background-size:100% 100%;
+	transition: .25s;
 }
 
 .catalog__slide:last-child {
 	margin-right: 0;
 	opacity: 0.5;
 	background: #e1e1e1 url("../imgs/main/trainers2.png") no-repeat center left;
+	background-size:100% 100%;
+	transition: .25s;
 }
 
 .catalog__slide:nth-child(3) {
 	background: #e1e1e1 url("../imgs/main/women_catalog.jpg") no-repeat center
 		left;
+	background-size:100% 100%;
+	transition: .25s;
+}
+
+.catalog__slide:hover {
+	background-size:120% 120%;
 }
 
 .catalog__slide-name {
@@ -680,6 +704,7 @@
 .marketplace__btns {
 	display: flex;
 	align-items: center;
+	margin-top:2em;
 }
 
 .marketplace__btn {
@@ -697,7 +722,7 @@
 }
 
 .marketplace__btn:last-child {
-	margin-right: 0;
+	margin-right: 0.5em;
 }
 
 .ozon-btn {
@@ -759,6 +784,8 @@
 	background-size: cover;
 	min-height: 613px;
 	margin-right: 45px;
+	background-size: 100% 100%;
+	transition: .25s;
 }
 
 /* .tecnology__slide:nth-child(odd) {
@@ -767,6 +794,12 @@
 
 .tecnology__slide:last-child {
 	margin-right: 0;
+	background-size: 100% 100%;
+	transition: .25s;
+}
+
+.tecnology__slide:hover {
+	background-size: 120% 120%;
 }
 
 .tecnology__slide-title {
@@ -867,7 +900,7 @@
 }
 
 .features__card:hover {
-	cursor: pointer;
+	cursor: default;
 }
 
 .features__text {
@@ -1396,13 +1429,15 @@
 		align-items: start;
 		margin-top: 40px;
 	}
-	.marketplace__btn {
-		min-width: 100%;
-		margin-bottom: 10px;
-	}
 
 	.marketplace__btn:last-child {
 		margin-bottom: 0;
+		margin-right:auto;
+	}
+	.marketplace__btn {
+		min-width: 90%;
+		margin:0.3em auto;
+		margin-bottom: 10px;
 	}
 
 	.mrketplace__slider-track {
