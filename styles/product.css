@@ -225,6 +225,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 60px 57px 62px 43px;
+	max-width:450px;
 	box-sizing: border-box;
 	border: 1px solid #e6e6e6;
 	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
@@ -346,8 +347,72 @@
 	display: none;
 }
 
+#block-for-slider {
+	max-width: 450px;
+	margin-top: 100px;
+	align-self: flex-start;
+}
+
+#viewport {
+	width: 100%;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#slidewrapper {
+	position: relative;
+	width: calc(100% * 4);
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-o-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+#slidewrapper ul, #slidewrapper li {
+	margin: 0;
+	padding: 0;
+}
+
+#slidewrapper li {
+	width: calc(100%/4);
+	list-style: none;
+	display: inline;
+	float: left;
+}
+
+.slide-img {
+	width: 100%;
+}
+
 .reviews__slider-btns {
-	display: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 27px;
+	width:100%;
+	max-width:100vw;
+}
+
+.reviews__slider-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border: 1px solid #000000;
+	background: transparent;
+	border-radius: 50%;
+	margin-right: 13px;
 }
 
 @media (max-width: 415px) {
@@ -505,12 +570,10 @@
 
 	.reviews__slider {
 		max-width: 95vw;
-		margin: auto;
 	}
 
 	.reviews__slide {
-		/* max-width: 100%; */
-		min-width: 100%;
+		width: 100%;
 	}
 	.reviews__user-name {
 		display: none;
@@ -552,25 +615,6 @@
 		line-height: 15px;
 		min-width: 100%;
 		margin-top: 38px;
-	}
-
-	.reviews__slider-btns {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 27px;
-	}
-
-	.reviews__slider-btn {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 44px;
-		height: 44px;
-		border: 1px solid #000000;
-		background: transparent;
-		border-radius: 50%;
-		margin-right: 13px;
 	}
 	.reviews__slider-btn:last-child {
 		margin-right: 0;
