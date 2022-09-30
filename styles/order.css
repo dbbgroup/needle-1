@@ -80,7 +80,7 @@ th, td {
     justify-content: space-between;
     line-height: 45px;
     font-family: SBoldMontserrat;
-    margin:0.7em 0;
+    margin:0.1em 0;
 }
 
 .order__form-input {
@@ -200,6 +200,11 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
     overflow:hidden;
 }
 
+.order__rate {
+    display:flex;
+    justify-content: space-between;
+}
+
 .order-completed__wrapper, .order-review__wrapper {
     background:#fff;
     max-width:500px;
@@ -207,7 +212,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
     padding:3vh 2em 0;
     text-align:center;
     border-radius:2px;
-    position:fixed;
+    overflow-y:auto;
 }
 
 .order-review__wrapper {

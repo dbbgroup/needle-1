@@ -3,6 +3,7 @@ function toggleThank() {
 
     if (thank.style.display == "none") {
         thank.style.display = "block";
+        body.style.overflow = "hidden";
     } else {
         thank.style.display = "none";
     }

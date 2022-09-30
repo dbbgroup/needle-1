@@ -210,7 +210,7 @@
 .reviews__slider-track {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	overflow-x: hidden;
 }
 
@@ -225,12 +225,14 @@
 	display: flex;
 	flex-direction: column;
 	padding: 60px 57px 62px 43px;
-	max-width:450px;
+	max-width:600px;
+	min-width:300px;
 	box-sizing: border-box;
 	border: 1px solid #e6e6e6;
 	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
 	border-radius: 20px;
 	position:relative;
+	margin:0 15px;
 }
 
 .reviews__slide .reviews__slide-user-info {
@@ -346,51 +348,33 @@
 	display: none;
 }
 
-#block-for-slider {
-	max-width: 450px;
-	margin-top: 100px;
-	align-self: flex-start;
-}
-
-#viewport {
-	width: 100%;
+.slider {
 	position: relative;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
+	margin: 50px auto 0;
+	/* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
 	user-select: none;
+	/* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+	touch-action: pan-y;
 }
 
-#slidewrapper {
-	position: relative;
-	width: calc(100% * 4);
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
+.slider img {
+	poiner-events: none;
 }
 
-#slidewrapper ul, #slidewrapper li {
-	margin: 0;
-	padding: 0;
+.slider-list {
+	overflow: hidden;
 }
 
-#slidewrapper li {
-	width: calc(100%/4);
-	list-style: none;
-	display: inline;
-	float: left;
+.slider-list.grab {
+	cursor: grab;
 }
 
-.slide-img {
-	width: 100%;
+.slider-list.grabbing{
+	cursor: grabbing;
+}
+
+.slider-track {
+	display: flex;
 }
 
 .reviews__slider-btns {
