@@ -326,7 +326,11 @@ td {
 	cursor: pointer;
 }
 
-
+.cart__table-total.col-4 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 
 @media screen and (max-width:1150px) {
 	.cart__row-text {
