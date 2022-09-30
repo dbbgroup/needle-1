@@ -2,7 +2,7 @@ let slider = document.querySelector('.slider'),
     sliderList = slider.querySelector('.slider-list'),
     sliderTrack = slider.querySelector('.slider-track'),
     slides = slider.querySelectorAll('.slide'),
-    arrows = slider.querySelector('.slider-arrows'),
+    arrows = slider.querySelector('.reviews__slider-btns'),
     prev = arrows.children[0],
     next = arrows.children[1],
     slideWidth = slides[0].offsetWidth,
@@ -17,7 +17,7 @@ let slider = document.querySelector('.slider'),
         return (event.type.search('touch') !== -1) ? event.touches[0] : event;
     },
     slide = function() {
-        if (transition) {
+        if (!transition) {
             sliderTrack.style.transition = 'transform .5s';
         }
         sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
@@ -77,9 +77,9 @@ slider.addEventListener('mousedown', swipeStart);
 arrows.addEventListener('click', function() {
     let target = event.target;
 
-    if (target === next) {
+    if (target === "next") {
         slideIndex++;
-    } else if (target === prev) {
+    } else if (target === "prev") {
         slideIndex--;
     } else {
         return;
