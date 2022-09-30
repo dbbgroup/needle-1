@@ -203,16 +203,17 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 .order-completed__wrapper, .order-review__wrapper {
     background:#fff;
     max-width:500px;
-    margin:5vh auto;
-    padding:5vh 2em 0;
+    margin:7vh auto;
+    padding:3vh 2em 0;
     text-align:center;
     border-radius:2px;
+    position:fixed;
 }
 
 .order-review__wrapper {
     max-width: 700px;
     text-align:left;
-    margin-top:5vh;
+    margin-top:7vh;
 }
 
 .order-review__wrapper .order-form-wrapper .order-form__col {
@@ -227,7 +228,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 .order-completed__body-text {
     font-family: MedMontserrat;
     font-size:1rem;
-    margin:1em 0 5vh;
+    margin:1em 0 2vh;
 }
 
 .menu__search-input {

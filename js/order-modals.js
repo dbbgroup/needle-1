@@ -44,22 +44,22 @@ let revi = document.getElementById('order-review');
 let thank = document.getElementById('search-modal');
 
 lovel.addEventListener("click", (event) => {
-    if (!event.target.classList.contains("menu__content")) {
+    if (event.target.classList.contains("order-review__wrapper")) {
         lovel.style.display = "none";
     }
 });
 compl.addEventListener("click", (event) => {
-    if (!event.target.classList.contains("menu__content")) {
+    if (event.target.classList.contains("order-completed__wrapper")) {
         compl.style.display = "none";
     }
 });
 revi.addEventListener("click", (event) => {
-    if (!event.target.classList.contains("menu__content")) {
+    if (event.target.classList.contains("order-review__wrapper")) {
         revi.style.display = "none";
     }
 });
 thank.addEventListener("click", (event) => {
-    if (!event.target.classList.contains("menu__content")) {
+    if (event.target.classList.contains("order-review__wrapper")) {
         thank.style.display = "none";
     }
 });
