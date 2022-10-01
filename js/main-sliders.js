@@ -8,7 +8,9 @@ $(function() {
     owl1.owlCarousel({
         items: 1,
         loop: true,
-        nav: true
+        dots: true,
+        dotsClass: 'products__item-dots',
+        dotClass: 'products__item-dot'
     });
 });
 
@@ -18,6 +20,20 @@ $(function() {
     owl1.owlCarousel({
         items: 2,
         loop: true,
-        nav: true
+        dots: true,
+        dotsClass: 'tecnology__slider-switchers',
+        dotClass: 'tecnology__slider-switcher'
+    });
+});
+
+$(function() {
+    // Owl Carousel
+    var owl1 = $(".owl-carousel3");
+    owl1.owlCarousel({
+        items: 1,
+        loop: true,
+        dots: false,
+        nav: true,
+        navClass: 'prodNavBtn'
     });
 });
