@@ -226,7 +226,7 @@
 
 .products__container {
 	display: flex;
-	align-items: center;
+	flex-direction: row;
 }
 
 .products__item {
@@ -263,6 +263,7 @@
 	background: url(../imgs/main/trainers1.png) no-repeat center center;
 	background-size: cover;
 	background-size: 100% 100%;
+	object-fit: contain;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -781,10 +782,10 @@
 	position: relative;
 	min-width: 65%;
 	background: url(../imgs/main/trainers_bg.jpg) no-repeat center center;
-	background-size: cover;
 	min-height: 613px;
 	margin-right: 45px;
 	background-size: 100% 100%;
+
 	transition: .25s;
 }
 
@@ -1134,6 +1135,11 @@
 		width: 100%;
 		max-height: 470px;
 		height: 100%;
+		margin-top:0;
+	}
+
+	.products__item:first-child {
+		margin-top:15px;
 	}
 
 	.products__item-slide {

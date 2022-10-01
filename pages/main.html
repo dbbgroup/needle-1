@@ -4,9 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="../styles/normolize.css" />
-		<link rel="stylesheet" href="../styles/main.css" />
 		<title>Главная страница</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script defer src="../js/main-sliders.js"></script>
+		<link rel="stylesheet" href="../styles/main.css" />
+
 	</head>
 	<body>
 		<header class="header">
@@ -256,7 +262,7 @@
 			<div class="products__container">
 				<div class="products__item">
 					<div class="products__item-slider">
-						<div class="products__item-track">
+						<div class="products__item-track owl-carousel">
 							<div class="products__item-slide">
 								<div class="products__item-content">
 									<div class="products__item-row">
@@ -366,7 +372,7 @@
 				</div>
 				<div class="products__item">
 					<div class="products__item-slider">
-						<div class="products__item-track">
+						<div class="products__item-track owl-carousel">
 							<div class="products__item-slide">
 								<div class="products__item-content">
 									<div class="products__item-row">
@@ -398,7 +404,7 @@
 				</div>
 				<div class="products__item">
 					<div class="products__item-slider">
-						<div class="products__item-track">
+						<div class="products__item-track owl-carousel">
 							<div class="products__item-slide">
 								<div class="products__item-content">
 									<div class="products__item-row">
@@ -430,7 +436,7 @@
 				</div>
 				<div class="products__item">
 					<div class="products__item-slider">
-						<div class="products__item-track">
+						<div class="products__item-track owl-carousel">
 							<div class="products__item-slide">
 								<div class="products__item-content">
 									<div class="products__item-row">
@@ -598,7 +604,50 @@
 			</div>
 		</section>
 		<section class="product">
-			<div id="products-slider" class="container">
+			<div id="products-slider" class="container owl-carousel">
+				<div class="product__row">
+					<div class="product__info">
+						<div class="product__slider">
+							<div class="product__slider-track">
+								<div class="product__slide">
+									<!-- при адаптиве одно скрывается -->
+									<h1 class="product__title">shoes title</h1>
+									<img
+										src="../imgs/main/pink_traines.jpg"
+										alt="trainers"
+									/>
+								</div>
+							</div>
+						</div>
+						<h2 class="product__name">shoes title</h2>
+						<div class="product__preview-imgs--adaptive">
+							<img
+								src="../imgs/main/pink_trainers-1.jpg"
+								alt="trainers"
+							/>
+							<img
+								src="../imgs/main/pink_trainers-3.png"
+								alt="trainers"
+							/>
+						</div>
+						<div class="product__price">
+							<span class="product__current-price">8490₽</span>
+							<span class="product__prev-price">10 390₽</span>
+						</div>
+					</div>
+					<div class="product__preview">
+						<div class="product__preview-imgs">
+							<img
+								src="../imgs/main/pink_trainers-1.jpg"
+								alt="trainers"
+							/>
+							<img
+								src="../imgs/main/pink_trainers-2.jpg"
+								alt="trainers"
+							/>
+						</div>
+					</div>
+				</div>
 				<div class="product__row">
 					<div class="product__info">
 						<div class="product__slider">
@@ -703,7 +752,7 @@
 		<section class="tecnology">
 			<h1 class="tecnology__title">Технологии PEAK</h1>
 			<div class="tecnology__slider">
-				<div class="tecnology__slider-track">
+				<div class="tecnology__slider-track owl-carousel2">
 					<div class="tecnology__slide">
 						<div class="tecnology__slide-content">
 							<h3 class="tecnology__slide-title">PEAK-TAICHI</h3>
