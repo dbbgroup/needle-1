@@ -211,11 +211,11 @@
 
 .header__catalog-item:hover {
 	cursor: pointer;
+	color: #0d9252;
 }
 
 .header__catalog-item:last-child {
 	margin-right: 0;
-	color: #0d9252;
 }
 
 /* section products (with shoes) */
@@ -1002,18 +1002,22 @@
 
 .r, .p {
 	padding:0;
-	line-height:50px;
 	background:none;
 	border:1px solid #333;
 	border-radius:50%;
 	width:50px;
 	height:50px;
-	font-size:1.7em;
+	font-size:1.4em;
 	margin:1.5em 1em 0 0;
 }
 
 .r:hover, .p:hover {
 	background:#f5f5f5;
+}
+
+.r span, .p span {
+	height:20px;
+	line-height:20px;
 }
 
 @media (max-width: 415px) {
