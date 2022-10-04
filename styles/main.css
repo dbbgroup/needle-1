@@ -262,7 +262,7 @@
 .products__item-slide {
 	position: relative;
 	min-width: 100%;
-	min-height: 543px;
+	min-height: 560px;
 	background: url(../imgs/main/trainers1.png) no-repeat center center;
 	background-size: cover;
 	background-size: 100% 100%;
@@ -797,6 +797,13 @@ a.new-delivery__more-btn {
 	justify-content: center;
 }
 
+.tecnology__slider {
+	width:150%;
+	overflow: hidden;
+	position: center;
+	margin-left:-25%;
+}
+
 .tecnology__slide {
 	position: relative;
 	min-width: 65%;
@@ -876,6 +883,7 @@ a.new-delivery__more-btn {
 
 .tecnology__slider-switcher.active {
 	height:5px;
+	background: crimson;
 }
 
 .tecnology__slider-switcher:hover {
@@ -1526,7 +1534,6 @@ a.new-delivery__more-btn {
 	}
 
 	.tecnology__slide {
-		min-height: 768px;
 		min-width: 100%;
 		margin: 0;
 	}

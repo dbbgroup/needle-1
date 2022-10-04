@@ -18,11 +18,22 @@ $(function() {
     // Owl Carousel
     var owl1 = $(".owl-carousel2");
     owl1.owlCarousel({
-        items: 2,
+        items: 3,
         loop: true,
         dots: true,
         dotsClass: 'tecnology__slider-switchers',
-        dotClass: 'tecnology__slider-switcher'
+        dotClass: 'tecnology__slider-switcher',
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
     });
 });
 
