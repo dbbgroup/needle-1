@@ -1,5 +1,7 @@
 .offer-wrapper {
-    padding:5vh 0 10vh;
+    padding:5vh 0 5vh;
+    line-height: 1.4rem;
+    font-size:0.9rem;
 }
 
 .offer__head-text {
@@ -9,6 +11,7 @@
 
 .offer__delivery-head {
     font-family: SBoldMontserrat;
+    line-height: 1.8rem;
 }
 
 .offer__delivery-item {
@@ -17,6 +20,6 @@
 
 @media screen and (max-width: 416px) {
     .offer-wrapper {
-        padding:1.5em;
+        padding:1.5em 0.5em;
     }
 }

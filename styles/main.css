@@ -27,7 +27,8 @@
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.7);
 	z-index: 9999;
-	display: none;
+	visibility:hidden;
+	transition: 0.4s;
 }
 
 .menu__logo {
@@ -39,16 +40,17 @@
 }
 
 .menu__content {
-	position: relative;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background: #000;
 	height: 100vh;
-	left: 0;
 	top: 0;
 	width: 40vw;
+	left:-150%;
+	transition: 0.4s;
 }
 
 .menu__close {
@@ -207,6 +209,7 @@
 	line-height: 17px;
 	text-transform: uppercase;
 	margin-right: 35px;
+	font-family:'MedMontserrat';
 }
 
 .header__catalog-item:hover {
@@ -439,6 +442,7 @@
 	border-radius: 25px;
 	font-weight: 600;
 	font-size: 12px;
+	border: 1px solid #000;
 	line-height: 15px;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
@@ -454,6 +458,7 @@
 .dark-btn {
 	margin-bottom: 10px;
 	background: #000000;
+	border:1px solid #000;
 	color: #fff;
 }
 
@@ -464,8 +469,13 @@
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 22px;
+	border:1px solid #000;
 	text-decoration-line: underline;
 	color: #000000;
+}
+
+a.new-delivery__more-btn {
+	border:none;
 }
 
 /* section catalog (slider) */
@@ -528,6 +538,7 @@
 	width: 100%;
 	background: #000000;
 	padding: 17px 0;
+	border:1px solid #000;
 	border-radius: 25px;
 	font-weight: 600;
 	font-size: 12px;
@@ -1007,7 +1018,6 @@
 	border-radius:50%;
 	width:50px;
 	height:50px;
-	font-size:1.4em;
 	margin:1.5em 1em 0 0;
 }
 

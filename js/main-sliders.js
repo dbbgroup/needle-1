@@ -37,3 +37,26 @@ $(function() {
         navClass: 'prodNavBtn'
     });
 });
+
+$(function() {
+    // Owl Carousel
+    var owl1 = $(".owl-carousel4");
+    owl1.owlCarousel({
+        items: 3,
+        loop: true,
+        dots: false,
+        nav: true,
+        navClass: 'prodNavBtn',
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+});

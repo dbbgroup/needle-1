@@ -377,7 +377,7 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 	border: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 416px) {
 	.container {
 		max-width: 95vw;
 	}

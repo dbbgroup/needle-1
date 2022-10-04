@@ -172,7 +172,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	color: #ffffff;
 	border-radius: 25px;
 	padding: 22px 0;
-	border: none solid;
+	border: none;
 	background: #000;
 	margin: 16px 0 12px;
 }
@@ -332,6 +332,10 @@ td {
 	align-items: center;
 }
 
+.cart__table-price-span-mobile {
+	display: none;
+}
+
 @media screen and (max-width:1150px) {
 	.cart__row-text {
 		margin-left:2px;
@@ -420,5 +424,13 @@ td {
 
 	.cart__promokod-input {
 		width:80%;
+	}
+
+	.cart__table-price-span-mobile {
+		display: block;
+	}
+
+	.cart__table-price.col-3 {
+		display:none;
 	}
 }

@@ -346,6 +346,7 @@
 	padding: 17px 0;
 	max-width: 330px;
 	width: 100%;
+	border:1px solid #000;
 	margin: 70px auto 0;
 }
 
@@ -384,6 +385,8 @@
 
 .slider-track {
 	display: flex;
+	max-width:90vw;
+	margin: 0 auto;
 }
 
 .reviews__slider-btns {

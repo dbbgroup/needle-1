@@ -152,11 +152,11 @@
       <div class="order-form__col order-form__col1">
         <label class="order__col1-label">
           <span>Ваше имя</span>
-          <input class="order__form-input" type="text" name="review_name">
+          <input class="order__form-input" type="text" name="review_name" placeholder="Например, Екатерина">
         </label>
         <label class="order__col1-label">
           <span>Ваша почта</span>
-          <input class="order__form-input" type="email" name="review_mail">
+          <input class="order__form-input" type="email" name="review_mail" placeholder="mail@example.com">
         </label>
         <label class="order__col1-label">
           <span>Ваш отзыв</span>
@@ -168,17 +168,30 @@
             <span>Ваша оценка</span>
           </label>
 
-          <div class="rating-area">
-            <input type="radio" id="star-5" name="rating" value="5">
-            <label for="star-5" title="Оценка «5»"></label>
-            <input type="radio" id="star-4" name="rating" value="4">
-            <label for="star-4" title="Оценка «4»"></label>
-            <input type="radio" id="star-3" name="rating" value="3">
-            <label for="star-3" title="Оценка «3»"></label>
-            <input type="radio" id="star-2" name="rating" value="2">
-            <label for="star-2" title="Оценка «2»"></label>
-            <input type="radio" id="star-1" name="rating" value="1">
-            <label for="star-1" title="Оценка «1»"></label>
+          <div class="rate-wrapper">
+            <div class="rating-area">
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+              <span class="rating-delimiter"></span>
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+              <span class="rating-delimiter"></span>
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+              <span class="rating-delimiter"></span>
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+              <span class="rating-delimiter"></span>
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+            <div class="rating-area">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
           </div>
         </div>
 
@@ -495,11 +508,15 @@
                 <span class="order__table-product-title">
                   Баскетбольные кроссовки PEAK KILLER
                 </span>
-                <span class="order__table-product-article">
+                <span class="order__table-product-article order__table-product-article-desktop">
                   36 RUS
                 </span>
                 <span class="order__table-product-quantity">
                   <span>3</span> шт.
+                </span>
+                <span class="order__table-product-price-mobile">
+                  <span>8490₽</span>
+                  <strike>9999₽</strike>
                 </span>
               </div>
             </div>
@@ -529,15 +546,15 @@
 
         <label class="order__col1-label">
           <span>Ваше имя</span>
-          <input class="order__form-input" type="text" name="name">
+          <input class="order__form-input" type="text" name="name" placeholder="Например, Екатерина">
         </label>
         <label class="order__col1-label">
           <span>Ваш телефон</span>
-          <input class="order__form-input" type="phone" name="phone">
+          <input class="order__form-input" type="phone" name="phone" placeholder="+79081231212">
         </label>
         <label class="order__col1-label">
           <span>Ваша почта</span>
-          <input class="order__form-input" type="email" name="email">
+          <input class="order__form-input" type="email" name="email" placeholder="mail@example.com">
         </label>
         <label class="order__col1-label">
           <span>Страна/Регион</span>
