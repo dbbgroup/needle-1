@@ -369,6 +369,10 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 	margin-right: 0;
 }
 
+.new-delivery__card-name, .new-delivery__card-price {
+	font-family: "BoldMontserrat";
+}
+
 .catalog-page__pagination-nextbtn,
 .catalog-page__pagination-prevbtn {
 	width: 100%;
@@ -382,7 +386,15 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 		max-width: 95vw;
 	}
 	.catalog-page__filter {
-		display: none;
+		position: absolute;
+		z-index: 999;
+		left:-150%;
+		transition: 0.4s;
+		min-width: 300px;
+		max-height:120%;
+		height:120%;
+		width:100%;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 	}
 
 	.catalog-page__title {
@@ -430,6 +442,7 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 		appearance: none;
 		min-width: 100%;
 		outline: none;
+		color:#333;
 		background: #f7f7f7;
 		padding: 8px 0 8px 13px;
 		font-weight: 500;
