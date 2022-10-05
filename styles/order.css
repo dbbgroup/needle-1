@@ -221,6 +221,11 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
     margin-top:7vh;
 }
 
+#search-modal1 {
+    opacity: 0;
+    transition: 0.2s;
+}
+
 .order-review__wrapper .order-form-wrapper .order-form__col {
     width:100%;
 }

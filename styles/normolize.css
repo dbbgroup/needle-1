@@ -37,6 +37,26 @@
 	margin: 0 auto;
 }
 
+.semiblack-button {
+	background:#333;
+	border:1px solid transparent;
+	color:#fff;
+	margin-bottom: 10px;
+	transition: 0.1s;
+}
+
+.grayscale-button {
+	background:#a7a7a7;
+	border:1px solid transparent;
+	color:#fff;
+	margin-bottom: 10px;
+	transition: 0.1s;
+}
+
+.semiblack-button:hover, .grayscale-button:hover {
+	opacity: 65%;
+}
+
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;

@@ -21,10 +21,13 @@ function toggleReview() {
 
 function toggleSearch() {
     let thank = document.getElementById('search-modal');
+    let sm = document.getElementById('search-modal1');
 
     if (thank.style.display == "none") {
         thank.style.display = "block";
+        sm.style.opacity = "1";
     } else {
+        sm.style.opacity = "0";
         thank.style.display = "none";
     }
 }
