@@ -277,7 +277,7 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 
 .catalog-page__cards > .new-delivery__card {
 	position: relative;
-	max-width: 32%;
+	max-width: 370px;
 	width: 100%;
 	margin-bottom: 40px;
 }
