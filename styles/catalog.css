@@ -272,14 +272,27 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 
 .catalog-page__cards {
 	flex-wrap: wrap;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .catalog-page__cards > .new-delivery__card {
 	position: relative;
-	max-width: 340px;
-	width: 100%;
+	max-width: 350px;
 	margin-bottom: 40px;
+}
+
+@media screen and (max-width:1550px) {
+
+	.catalog-page__cards {
+		flex-wrap: wrap;
+		margin-left: 20px;
+	}
+
+	.catalog-page__cards > .new-delivery__card {
+		position: relative;
+		max-width: 300px;
+		margin-bottom: 40px;
+	}
 }
 
 .new-delivery__card .catalog-page__card:before {
