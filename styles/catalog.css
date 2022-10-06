@@ -281,7 +281,11 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 	margin-bottom: 40px;
 }
 
-@media screen and (max-width:1550px) {
+.catalog-page__items {
+	width:100%;
+}
+
+@media screen and (max-width:1680px) {
 
 	.catalog-page__cards {
 		flex-wrap: wrap;
