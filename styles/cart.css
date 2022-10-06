@@ -189,7 +189,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 table,
 td,
 th {
-	border: 1px solid #b0b0b0;
+	border:1px solid #b0b0b0;
 	border-collapse: collapse;
 }
 
@@ -200,6 +200,16 @@ td {
 
 td {
 	height: 95px;
+}
+
+.cart__table-body tr .col-1 {
+	border:none;
+	border-bottom:1px solid #b0b0b0;
+	height:96px;
+}
+
+.cart__table-body tr:last-child .col-1, .cart__table-body tr:last-child .col-4 {
+	border-bottom:none;
 }
 
 .cart__table-header-label {
@@ -311,6 +321,9 @@ td {
 
 .cart__table-total {
 	padding: 0 26px;
+	height:96.45px;
+	border:none;
+	border-bottom:1px solid #b0b0b0;
 }
 
 .cart__table-total > span {
@@ -432,5 +445,9 @@ td {
 
 	.cart__table-price.col-3 {
 		display:none;
+	}
+
+	.cart__table-body tr .cart__table-item {
+		border-bottom:none;
 	}
 }

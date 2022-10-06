@@ -363,10 +363,16 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
 	cursor: pointer;
+	transition: 0.1s;
 }
 
 .catalog-page__pagination-item:last-child {
 	margin-right: 0;
+}
+
+.catalog-page__pagination-item:hover {
+	color:crimson;
+	background: rgba(224, 224, 224, 0.51);
 }
 
 .new-delivery__card-name, .new-delivery__card-price {
@@ -379,6 +385,10 @@ input[type="checkbox"]:checked + .catalog-page__aval-checked:before {
 	height: 100%;
 	background: transparent;
 	border: none;
+}
+
+.catalog__page-settings {
+	display:none;
 }
 
 @media (max-width: 416px) {
