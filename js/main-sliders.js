@@ -33,7 +33,8 @@ $(function() {
             1000:{
                 items:3
             }
-        }
+        },
+        dotsEach: 1
     });
 });
 
