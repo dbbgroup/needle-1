@@ -72,3 +72,26 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    // Owl Carousel
+    var owl1 = $(".owl-carousel5");
+    owl1.owlCarousel({
+        items: 4,
+        loop: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1500:{
+                items:4
+            }
+        }
+    });
+});

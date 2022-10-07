@@ -503,6 +503,10 @@ a.new-delivery__more-btn {
 	padding: 100px 0;
 }
 
+.catalog__slide-wrapper {
+	padding:0 20px;
+}
+
 .catalog__slide {
 	position: relative;
 	min-width: 475px;
@@ -516,17 +520,16 @@ a.new-delivery__more-btn {
 	background-size:100% 100%;
 	margin-right: 25px;
 	transition: .25s;
+	opacity: 0.8;
 }
 
 .catalog__slide:first-child {
-	opacity: 0.5;
 	background-size:100% 100%;
 	transition: .25s;
 }
 
 .catalog__slide:last-child {
 	margin-right: 0;
-	opacity: 0.5;
 	background: #e1e1e1 url("../imgs/main/trainers2.png") no-repeat center left;
 	background-size:100% 100%;
 	transition: .25s;
@@ -582,7 +585,12 @@ a.new-delivery__more-btn {
 
 .catalog__slider-track {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.catalog__slide {
+	margin:0 25px;
 }
 
 /* section product */
@@ -1456,10 +1464,6 @@ a.new-delivery__more-btn {
 		min-width: 100%;
 		min-height: 170px;
 		margin: 0 0 22px 0;
-	}
-
-	.catalog__slide:last-child {
-		margin: 0;
 	}
 
 	.catalog__slide:nth-child(1),
