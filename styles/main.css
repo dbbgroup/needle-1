@@ -221,9 +221,21 @@
 	text-transform: uppercase;
 	margin-right: 35px;
 	font-family:'MedMontserrat';
+	color:#333;
+	text-decoration: none;
 }
 
-.header__catalog-item:hover {
+.header__catalog-item > a {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#333;
+	font-family:'MedMontserrat';
+}
+
+.header__catalog-item > a:hover {
 	cursor: pointer;
 	color: #0d9252;
 }
@@ -1018,29 +1030,32 @@ a.new-delivery__more-btn {
 	justify-content: space-between;
 }
 
-.footer__info-title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 17px;
-	color: #ffffff;
-	margin-bottom: 20px;
-}
-
 .footer__info-list {
 	list-style-type: none;
 	padding: 0;
+	margin-top:20px;
 }
 
 .footer__info-block:last-child {
 	width: 20%;
 }
 
-.footer a {
+.footer .footer__info-link {
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 20px;
 	color: #979797;
+}
+
+.footer__info-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #ffffff;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .footer__media-block {
@@ -1779,12 +1794,6 @@ a.new-delivery__more-btn {
 		margin-bottom: 0;
 	}
 
-	.footer__info-title {
-		font-size: 17px;
-		line-height: 19px;
-		margin-bottom: 10px;
-	}
-
 	.footer__info-link {
 		font-size: 15px;
 		line-height: 18px;
@@ -1809,6 +1818,12 @@ a.new-delivery__more-btn {
 
 	.footer__info-li a {
 		font-size:13px;
+	}
+
+	.footer__info-title {
+		font-size: 17px;
+		line-height: 19px;
+		margin-bottom: 10px;
 	}
 
 	.product__preview-btns {

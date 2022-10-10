@@ -26,8 +26,9 @@
 	cursor: pointer;
 }
 
-input[type="checkbox"] {
-	display: none;
+.cart__row-checkbox .cart__row-checkbox {
+	visibility: hidden;
+	width:0;
 }
 
 .cart__row-checked {
@@ -186,28 +187,29 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	max-width: 100%;
 }
 
-table,
-td,
-th {
+.cart__table,
+.cart__table-td,
+.cart__table-th {
 	border:1px solid #b0b0b0;
 	border-collapse: collapse;
-}
-
-th,
-td {
-	padding: 20px 0;
-}
-
-td {
 	height: 95px;
 }
 
-.cart__table-body tr .col-1 {
+.cart__table-th,
+.cart__table-td {
+	padding: 20px 0;
+}
+
+.cart__table-tr {
+	height: 95px;
+}
+
+.cart__table-body .cart__table-tr .col-1 {
 	border:none;
 	border-top:1px solid #b0b0b0;
 }
 
-.cart__table-body tr:first-child .col-1, .cart__table-body tr:first-child .col-4 {
+.cart__table-body .cart__table-tr:first-child .col-1, .cart__table-body .cart__table-tr:first-child .col-4 {
 	border-top:none;
 }
 
@@ -218,6 +220,7 @@ td {
 	line-height: 20px;
 	text-align: center;
 	color: #292929;
+	height:95px;
 }
 
 .cart__table-item {
@@ -321,7 +324,6 @@ td {
 
 .cart__table-total {
 	padding: 0 26px;
-	height:96.45px;
 	border:none;
 	border-bottom:1px solid #b0b0b0;
 }
@@ -349,8 +351,8 @@ td {
 	display: none;
 }
 
-tr {
-	height:95px;
+.cart__table-row {
+	display: table-row;
 }
 
 @media screen and (max-width:1150px) {
@@ -374,11 +376,11 @@ tr {
 		border:none;
 	}
 
-	.cart__table-body td, .cart__table-body th {
+	.cart__table-body .cart__table-td, .cart__table-body .cart__table-th {
 		border:none;
 	}
 
-	.cart__table-body tr {
+	.cart__table-body .cart__table-tr {
 		border:none;
 		border-top:1px solid #b0b0b0;
 	}
@@ -422,16 +424,14 @@ tr {
 	}
 
 	.cart__table {
-		display: flex;
-		flex-direction: column;
 		border:none;
 	}
 
-	.cart__table thead {
+	.cart__table .cart__table-header {
 		display: none;
 	}
 
-	.cart__table tbody tr {
+	.cart__table .cart__table-body .cart__table-tr {
 		display:flex;
 		flex-direction: column;
 		border:1px solid #e0e0e0;
@@ -451,7 +451,14 @@ tr {
 		display:none;
 	}
 
-	.cart__table-body tr .cart__table-item {
+	.cart__table-body .cart__table-tr .cart__table-item {
 		border-bottom:none;
+	}
+
+	.cart__table,
+	.cart__table-tr,
+	.cart__table-td,
+	.cart__table-th {
+		height: 140px;
 	}
 }

@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/normolize.css" />
 		<link rel="stylesheet" href="../styles/main.css" />
-		<link rel="stylesheet" href="../styles//normolize.css" />
 		<link rel="stylesheet" href="../styles/cart.css" />
 		<title>Корзина</title>
 	</head>
@@ -276,24 +276,24 @@
 				<div class="cart__row">
 					<table class="cart__table">
 						<thead class="cart__table-header">
-							<tr>
-								<th class="cart__table-header-label col-1">
+							<tr class="cart__table-tr">
+								<th class="cart__table-th cart__table-header-label col-1">
 									Наименование
 								</th>
-								<th class="cart__table-header-label col-2">
+								<th class="cart__table-th cart__table-header-label col-2">
 									Цена
 								</th>
-								<th class="cart__table-header-label col-3">
+								<th class="cart__table-th cart__table-header-label col-3">
 									Количество
 								</th>
-								<th class="cart__table-header-label col-4">
+								<th class="cart__table-th cart__table-header-label col-4">
 									ИТОГО
 								</th>
 							</tr>
 						</thead>
 						<tbody class="cart__table-body">
-							<tr>
-								<td class="cart__table-item col-1">
+							<tr class="cart__table-tr">
+								<td class="cart__table-td cart__table-item col-1">
 									<div class="cart__row-checkbox">
 										<label
 											for="check-item1"
@@ -330,7 +330,7 @@
 										</div>
 									</div>
 								</td>
-								<td class="cart__table-price col-2">
+								<td class="cart__table-td cart__table-price col-2">
 									<span class="cart__table-price-span cart__table-price-span-mobile">8490 ₽</span>
 
 									<div class="cart__table-quantity-row">
@@ -352,247 +352,10 @@
 										</button>
 									</div>
 								</td>
-								<td class="cart__table-price col-3">
+								<td class="cart__table-td cart__table-price col-3">
 									<span class="cart__table-price-span">8490 ₽</span>
 								</td>
-								<td class="cart__table-total col-4">
-									<span>25,470 ₽</span>
-									<svg
-										width="9"
-										height="8"
-										viewBox="0 0 9 8"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M6.2862 7.5L4.477 5.19981L2.60647 7.5H0L3.17376 3.72212L0.107325 0H2.79046L4.53833 2.18866L6.3322 0H8.87734L5.8109 3.66636L9 7.5H6.2862Z"
-											fill="#E30613"
-										/>
-									</svg>
-								</td>
-							</tr>
-							<tr>
-								<td class="cart__table-item col-1">
-									<div class="cart__row-checkbox">
-										<label
-											for="check-item2"
-											class="cart__row-label"
-										>
-											<input
-												id="check-item2"
-												type="checkbox"
-												class="cart__row-checkbox"
-											/>
-											<span
-												class="cart__row-checked"
-											></span>
-											<span class="cart__row-text"></span>
-										</label>
-									</div>
-									<div class="cart__table-products">
-										<div class="cart__table-product-img">
-											<img
-												src="../imgs/main/white_trainers.png"
-												alt="trainers"
-											/>
-										</div>
-										<div class="cart__table-product-info">
-											<span
-												class="cart__table-product-title"
-												>Баскетбольные кроссовки PEAK
-												KILLER</span
-											>
-											<span
-												class="cart__table-product-price"
-												>36 RUS</span
-											>
-										</div>
-									</div>
-								</td>
-								<td class="cart__table-price col-2">
-									<span class="cart__table-price-span cart__table-price-span-mobile">8490 ₽</span>
-
-									<div class="cart__table-quantity-row">
-										<button
-												class="cart__table-quantity-btn"
-										>
-											+
-										</button>
-										<input
-												class="cart__table-quantity-input"
-												type="text"
-												placeholder="3"
-												readonly
-										/>
-										<button
-												class="cart__table-quantity-btn"
-										>
-											-
-										</button>
-									</div>
-								</td>
-								<td class="cart__table-price col-3">
-									<span class="cart__table-price-span">8490 ₽</span>
-								</td>
-								<td class="cart__table-total col-4">
-									<span>25,470 ₽</span>
-									<svg
-										width="9"
-										height="8"
-										viewBox="0 0 9 8"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M6.2862 7.5L4.477 5.19981L2.60647 7.5H0L3.17376 3.72212L0.107325 0H2.79046L4.53833 2.18866L6.3322 0H8.87734L5.8109 3.66636L9 7.5H6.2862Z"
-											fill="#E30613"
-										/>
-									</svg>
-								</td>
-							</tr>
-							<tr>
-								<td class="cart__table-item col-1">
-									<div class="cart__row-checkbox">
-										<label
-											for="check-item3"
-											class="cart__row-label"
-										>
-											<input
-												id="check-item3"
-												type="checkbox"
-												class="cart__row-checkbox"
-											/>
-											<span
-												class="cart__row-checked"
-											></span>
-											<span class="cart__row-text"></span>
-										</label>
-									</div>
-									<div class="cart__table-products">
-										<div class="cart__table-product-img">
-											<img
-												src="../imgs/main/white_trainers.png"
-												alt="trainers"
-											/>
-										</div>
-										<div class="cart__table-product-info">
-											<span
-												class="cart__table-product-title"
-												>Баскетбольные кроссовки PEAK
-												KILLER</span
-											>
-											<span
-												class="cart__table-product-price"
-												>36 RUS</span
-											>
-										</div>
-									</div>
-								</td>
-								<td class="cart__table-price col-2">
-									<span class="cart__table-price-span cart__table-price-span-mobile">8490 ₽</span>
-
-									<div class="cart__table-quantity-row">
-										<button
-												class="cart__table-quantity-btn"
-										>
-											+
-										</button>
-										<input
-												class="cart__table-quantity-input"
-												type="text"
-												placeholder="3"
-												readonly
-										/>
-										<button
-												class="cart__table-quantity-btn"
-										>
-											-
-										</button>
-									</div>
-								</td>
-								<td class="cart__table-price col-3">
-									<span class="cart__table-price-span">8490 ₽</span>
-								</td>
-								<td class="cart__table-total col-4">
-									<span>25,470 ₽</span>
-									<svg
-										width="9"
-										height="8"
-										viewBox="0 0 9 8"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M6.2862 7.5L4.477 5.19981L2.60647 7.5H0L3.17376 3.72212L0.107325 0H2.79046L4.53833 2.18866L6.3322 0H8.87734L5.8109 3.66636L9 7.5H6.2862Z"
-											fill="#E30613"
-										/>
-									</svg>
-								</td>
-							</tr>
-							<tr>
-								<td class="cart__table-item col-1">
-									<div class="cart__row-checkbox">
-										<label
-											for="check-item4"
-											class="cart__row-label"
-										>
-											<input
-												id="check-item4"
-												type="checkbox"
-												class="cart__row-checkbox"
-											/>
-											<span
-												class="cart__row-checked"
-											></span>
-											<span class="cart__row-text"></span>
-										</label>
-									</div>
-									<div class="cart__table-products">
-										<div class="cart__table-product-img">
-											<img
-												src="../imgs/main/white_trainers.png"
-												alt="trainers"
-											/>
-										</div>
-										<div class="cart__table-product-info">
-											<span
-												class="cart__table-product-title"
-												>Баскетбольные кроссовки PEAK
-												KILLER</span
-											>
-											<span
-												class="cart__table-product-price"
-												>36 RUS</span
-											>
-										</div>
-									</div>
-								</td>
-								<td class="cart__table-price col-2">
-									<span class="cart__table-price-span cart__table-price-span-mobile">8490 ₽</span>
-
-									<div class="cart__table-quantity-row">
-										<button
-												class="cart__table-quantity-btn"
-										>
-											+
-										</button>
-										<input
-												class="cart__table-quantity-input"
-												type="text"
-												placeholder="3"
-												readonly
-										/>
-										<button
-												class="cart__table-quantity-btn"
-										>
-											-
-										</button>
-									</div>
-								</td>
-								<td class="cart__table-price col-3">
-									<span class="cart__table-price-span">8490 ₽</span>
-								</td>
-								<td class="cart__table-total col-4">
+								<td class="cart__table-td cart__table-total col-4">
 									<span>25,470 ₽</span>
 									<svg
 										width="9"
@@ -823,6 +586,6 @@
 				</div>
 			</div>
 		</footer>
-		<script type="module" src="../js/main.js"></script>
+		<script type=module src="../js/main.js"></script>
 	</body>
 </html>
