@@ -152,6 +152,11 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
     text-decoration: none;
     padding:1.5rem 3rem;
     margin-top:5vh;
+    transition: 0.2s;
+}
+
+.order__form-submit:hover {
+    opacity: 50%;
 }
 
 .order__form-radio {

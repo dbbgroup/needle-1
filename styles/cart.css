@@ -146,6 +146,11 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	padding: 0 17px;
 	/* min-width: 100%; */
 	max-width: 100%;
+	transition: 0.2s;
+}
+
+.cart__promokod-btn:hover {
+	opacity: 0.8;
 }
 
 .cart__promokod-info {
@@ -176,6 +181,11 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	border: none;
 	background: #000;
 	margin: 16px 0 12px;
+	transition: 0.2s;
+}
+
+.cart__btn:hover {
+	opacity: 50%;
 }
 
 .cart__order-agreement {

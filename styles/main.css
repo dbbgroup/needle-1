@@ -248,6 +248,7 @@
 
 .products {
 	position: relative;
+	margin-bottom:-3px;
 }
 
 .products__container {
@@ -376,11 +377,13 @@
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	-ms-border-radius: 25px;
+	transition: 0.2s;
 	-o-border-radius: 25px;
 }
 
 .products__item-btn:hover {
 	cursor: pointer;
+	opacity: 50%;
 }
 
 /* section running-text */
@@ -431,11 +434,6 @@
 	border:1px solid transparent;
 }
 
-.new-delivery .new-delivery__card:hover {
-	border-radius:1em;
-	opacity: 60%;
-}
-
 .new-delivery__card-img {
 	max-width: 84%;
 	object-fit: contain;
@@ -479,10 +477,12 @@
 	color: #000;
 	background: transparent;
 	padding: 17px 0;
+	transition: 0.2s;
 }
 
 .new-delivery__card-btn:hover {
 	cursor: pointer;
+	opacity:50%;
 }
 
 .dark-btn {
@@ -490,6 +490,11 @@
 	background: #000000;
 	border:1px solid #000;
 	color: #fff;
+	transition: 0.2s;
+}
+
+.dark-btn:hover {
+	opacity: 50%;
 }
 
 .new-delivery__more-btn {
@@ -602,10 +607,12 @@ a.new-delivery__more-btn {
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	color: #ffffff;
+	transition: 0.2s;
 }
 
 .catalog__slide-btn:hover {
 	cursor: pointer;
+	opacity: 80%;
 }
 
 .catalog__slide-content {
@@ -727,6 +734,7 @@ a.new-delivery__more-btn {
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	background: transparent;
+	transition: 0.2s;
 }
 
 .product__preview-btns > button:hover {
@@ -736,6 +744,10 @@ a.new-delivery__more-btn {
 .product__preview-btns > .dark-btn {
 	background: #000;
 	margin: 20px 10px 0 0;
+}
+
+.product__preview-btns > button:last-child:hover {
+	opacity: 50%;
 }
 
 /* section marketplace */
@@ -783,10 +795,15 @@ a.new-delivery__more-btn {
 	text-transform: uppercase;
 }
 
+.reviews__slide-avatar {
+
+}
+
 .marketplace__btns {
 	display: flex;
 	align-items: center;
 	margin-top:2em;
+	justify-content: space-evenly;
 }
 
 .marketplace__btn {
@@ -797,6 +814,10 @@ a.new-delivery__more-btn {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
 
 .marketplace__btn:hover {
@@ -805,6 +826,10 @@ a.new-delivery__more-btn {
 
 .marketplace__btn:last-child {
 	margin-right: 0.5em;
+}
+
+.marketplace__btn > img {
+	height:15px;
 }
 
 .ozon-btn {

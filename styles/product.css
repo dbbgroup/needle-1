@@ -241,9 +241,8 @@
 
 .reviews__slide .reviews__user-desc {
 	width: 85%;
-
 	align-self: center;
-	margin-left:-5em;
+	margin-left:7em;
 }
 
 .reviews__slide-date {
@@ -288,12 +287,12 @@
 	overflow:hidden;
 	margin-left:1em;
 	text-wrap: normal;
+	margin-left:0;
 	word-wrap: break-word;
 }
 
 .reviews__user-desc {
 	justify-content: left;
-	margin-left:-50%;
 	justify-self: left;
 }
 
@@ -348,6 +347,11 @@
 	width: 100%;
 	border:1px solid #000;
 	margin: 70px auto 0;
+	transition: 0.2s;
+}
+
+.reviews__btn:hover {
+	opacity: 50%;
 }
 
 .reviews__user-name-adaptive {
@@ -581,7 +585,7 @@
 
 	.reviews__user-name-adaptive {
 		display: inline-block;
-		font-size: 16px;
+		font-size: 13px;
 		line-height: 20px;
 		margin: 0 0 4px 3px;
 	}
@@ -602,7 +606,7 @@
 	}
 
 	.reviews__slide-date {
-		margin: 0 0 3px 58px;
+		margin: 0 0 3px 68px;
 	}
 
 	.reviews__slide-stars > svg {
@@ -625,5 +629,15 @@
 		font-size: 26px;
 		line-height: 32px;
 		margin: 0 0 60px 0;
+	}
+
+	.reviews__slide-avatar {
+		width:40px;
+		height:40px;
+	}
+
+	.reviews__user-desc {
+		margin-left:-3em !important;
+		margin-top:1em;
 	}
 }
