@@ -264,6 +264,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 .cart__table-product-title {
 	max-width: 185px;
 	text-align: left;
+	font-family: "BoldMontserrat";
 }
 
 .cart__table-product-price {
@@ -338,6 +339,10 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	border-bottom:1px solid #b0b0b0;
 }
 
+.cart__table-body .cart__table-tr:last-child .col-4 {
+	border:none;
+}
+
 .cart__table-total > span {
 	font-weight: 700;
 	font-size: 16px;
@@ -359,6 +364,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 
 .cart__table-price-span-mobile {
 	display: none;
+	font-family: BoldMontserrat;
 }
 
 .cart__table-row {
@@ -410,7 +416,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 		height:auto;
 		display:flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: right;
 		padding:0.5em 0.6em;
 		font-size:1.7em;
 	}
@@ -444,7 +450,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	.cart__table .cart__table-body .cart__table-tr {
 		display:flex;
 		flex-direction: column;
-		border:1px solid #e0e0e0;
+		border-top:1px solid #e0e0e0;
 		margin:0.2em 0;
 		text-align: center;
 	}
@@ -470,5 +476,17 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 	.cart__table-td,
 	.cart__table-th {
 		height: 140px;
+	}
+
+	.cart__table-quantity-input {
+		width:30px;
+	}
+
+	.cart__table-quantity-row {
+		width:80px;
+	}
+
+	.cart__table-price-span-mobile {
+		font-size:1.2rem;
 	}
 }

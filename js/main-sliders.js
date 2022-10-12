@@ -63,9 +63,6 @@ $(function() {
             0:{
                 items:1
             },
-            500:{
-                items:2
-            },
             1000:{
                 items:3
             }

@@ -1095,6 +1095,10 @@ a.new-delivery__more-btn {
 	margin-right: 0;
 }
 
+.footer__media-block > a {
+	text-decoration: none;
+}
+
 .footer__divider {
 	background: #323232;
 	height: 1px;
