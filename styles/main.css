@@ -220,7 +220,7 @@
 	line-height: 17px;
 	text-transform: uppercase;
 	margin-right: 35px;
-	font-family:'MedMontserrat';
+	font-family:'BoldMontserrat';
 	color:#333;
 	text-decoration: none;
 }
@@ -232,7 +232,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color:#333;
-	font-family:'MedMontserrat';
+	font-family:'BoldMontserrat';
 }
 
 .header__catalog-item > a:hover {
@@ -710,6 +710,11 @@ a.new-delivery__more-btn {
 	align-items: center;
 }
 
+.product__preview-imgs > img {
+	max-height:384px;
+	width:auto;	
+}
+
 .product__btns--adaptive {
 	display: none;
 }
@@ -735,6 +740,7 @@ a.new-delivery__more-btn {
 	text-transform: uppercase;
 	background: transparent;
 	transition: 0.2s;
+	color:#000;
 }
 
 .product__preview-btns > button:hover {
@@ -744,6 +750,7 @@ a.new-delivery__more-btn {
 .product__preview-btns > .dark-btn {
 	background: #000;
 	margin: 20px 10px 0 0;
+	color:#fff;
 }
 
 .product__preview-btns > button:last-child:hover {
@@ -905,8 +912,6 @@ a.new-delivery__more-btn {
 	min-height: 613px;
 	margin-right: 45px;
 	background-size: 100% 100%;
-
-	transition: .25s;
 }
 
 /* .tecnology__slide:nth-child(odd) {
@@ -916,11 +921,6 @@ a.new-delivery__more-btn {
 .tecnology__slide:last-child {
 	margin-right: 0;
 	background-size: 100% 100%;
-	transition: .25s;
-}
-
-.tecnology__slide:hover {
-	background-size: 120% 120%;
 }
 
 .tecnology__slide-title {
@@ -1206,6 +1206,11 @@ a.new-delivery__more-btn {
 
 .new-delivery__title, .marketplace__info-title, .marketplace__info-bold, .tecnology__title, .features__title {
 	font-family: "BoldMontserrat";
+}
+
+.marketplace__slide, .marketplace__slide-img {
+	height:inherit;
+	max-height:589px;
 }
 
 @media screen and (min-width: 500px) {
@@ -1709,7 +1714,7 @@ a.new-delivery__more-btn {
 		opacity:0.5;
 	}
 
-	.mrketplace__slider-track {
+	.marketplace__slider-track {
 		overflow-x: hidden;
 	}
 
