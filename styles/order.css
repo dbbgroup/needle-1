@@ -214,7 +214,7 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
     background:#fff;
     max-width:500px;
     margin:7vh auto;
-    padding:3vh 5vw 0;
+    padding:3vh 5vw;
     text-align:center;
     border-radius:2px;
     overflow-y:auto;
@@ -253,7 +253,11 @@ input[type="checkbox"]:checked + .cart__row-checked:before {
 .order-completed__body-text {
     font-family: MedMontserrat;
     font-size:1rem;
-    margin:1em 0 2vh;
+    margin:1em 0 5vh;
+}
+
+#order-completed1 {
+    padding:8vh 2vh;
 }
 
 .menu__search-input {
